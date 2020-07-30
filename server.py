@@ -4,7 +4,7 @@ from hello_world import sb
 
 app = Flask(__name__)
 
-skill_adapter = SkillAdapter(skill=sb.create(), skill_id=1, app=app)
+skill_adapter = SkillAdapter(skill=sb.create(), skill_id='amzn1.ask.skill.41125c2b-0229-4ff4-8ea4-5290ad3830ea', app=app)
 
 @app.route("/", methods=['GET', 'POST'])
 def invoke_skill():
