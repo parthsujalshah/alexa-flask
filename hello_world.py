@@ -68,6 +68,3 @@ sb.add_request_handler(LaunchRequestHandler())
 sb.add_request_handler(HelloWorldIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_exception_handler(AllExceptionHandler())
-
-# handler = sb.lambda_handler()
-handler = sb.create()
