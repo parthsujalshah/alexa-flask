@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 skill_adapter = SkillAdapter(skill=sb.create(), skill_id=1, app=app)
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def invoke_skill():
     return skill_adapter.dispatch_request()
 
