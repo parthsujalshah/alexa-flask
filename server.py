@@ -10,5 +10,9 @@ skill_adapter = SkillAdapter(skill=sb.create(), skill_id='amzn1.ask.skill.41125c
 def invoke_skill():
     return skill_adapter.dispatch_request()
 
+@app.route("/test", methods=['GET', 'POST'])
+def test():
+    return 'hello world'
+
 if __name__ == "__main__":
     app.run(debug=True, port='443')
