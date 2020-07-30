@@ -8,7 +8,8 @@ skill_adapter = SkillAdapter(skill=sb.create(), skill_id='amzn1.ask.skill.41125c
 
 @app.route("/", methods=['GET', 'POST'])
 def invoke_skill():
-    return skill_adapter.dispatch_request()
+    # return skill_adapter.dispatch_request()
+    return 'hi'
 
 @app.route("/test", methods=['GET', 'POST'])
 def test():
